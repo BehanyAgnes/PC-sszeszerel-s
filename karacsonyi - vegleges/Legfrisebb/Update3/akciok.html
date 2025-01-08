@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="akcio.css">
+    <link rel="stylesheet" href="diszek.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kepek/christmas-tree.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Akciók</title>
+</head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand fs-4 fw-bold text-primary" href="karacsony.html"><img src="kepek/christmas-tree.png" alt="" style="width: 50px; height: 50px;"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item" style="display:flex; align-items: center;">
+                                <a class="nav-link active" aria-current="page" href="karacsony.html">Főoldal</a>
+                            </li>
+                            <li class="nav-item dropdown" style="display:flex; align-items: center;">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Termékeink
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="fenyfuzerek.html">Fényfüzérek</a></li>
+                                    <li><a class="dropdown-item" href="karacsonyfadiszek.html">Karácsonyfadíszek</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" style="display:flex; align-items: center;">
+                                <a class="nav-link" href="#">Akciók</a>
+                            </li>
+                            <li class="nav-item" style="display:flex; align-items: center;">
+                                <a class="nav-link" href="karacsony.html#szallitas">Szállítás</a>
+                            </li>
+                            <li class="nav-item" style="display:flex; align-items: center;">
+                                <a class="nav-link" href="karacsony.html#rolunk">Rólunk</a>
+                            </li>
+                            <li class="nav-item" style="display:flex; align-items: center;">
+                                <a class="nav-link" href="kosar.html"><button class="btn btn-outline-dark" style="justify-content: center;">Kosár tartalma</button></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <h1 style="text-align: center;">Akciós ajánlataink</h1>
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <div class="card p-3" style="align-items: center;">
+                        <img src="kepek/kalsszik_karacsonyfadisz.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Klasszikus piros karácsonyfadísz</p>
+                            <p class="card-text">'Karacsony' kuponkóddal:</p>
+                            <p class="card-text" style="color: red;">3250 forint</p>
+                            <a href="#" class="btn btn-success" style="width: 200px;" onclick="addToBasket('ball_10')">Kosárba <i class="bi bi-cart"></i></a>
+                            <a href="#" class="btn btn-danger" style="width: 200px;">Kedvencek <i class="bi bi-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card p-3" style="align-items: center;">
+                        <img src="kepek/fabábu_karacsonyfadisz.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Fából készült karácsonyfadíszek</p>
+                            <p class="card-text">hírlevél felíratkozással most csak:</p>
+                            <p class="card-text" style="color: red;">2350 forint</p>
+                            <a href="#" class="btn btn-success" style="width: 200px;" onclick="addToBasket('ball_9')">Kosárba <i class="bi bi-cart"></i></a>
+                            <a href="#" class="btn btn-danger" style="width: 200px;">Kedvencek <i class="bi bi-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card p-3" style="align-items: center;">
+                        <img src="kepek/fenyfüzer2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Karácsonyi fényfüzér akció</p>
+                            <p class="card-text">hírlevél felíratkozással most csak:</p>
+                            <p class="card-text" style="color: red;">3500 forint</p>
+                            <a href="#" class="btn btn-success" style="width: 200px;"  onclick="addToBasket('light_10')">Kosárba <i class="bi bi-cart"></i></a>
+                            <a href="#" class="btn btn-danger" style="width: 200px;">Kedvencek <i class="bi bi-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card p-3" style="align-items: center;">
+                        <img src="kepek/fenyfüzer8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Karácsonyi fényfüzér akció</p>
+                            <p class="card-text">hírlevelünkre feliratkozással:</p>
+                            <p class="card-text" style="color: red;">6500 forint</p>
+                            <a href="#" class="btn btn-success" style="width: 200px;" onclick="addToBasket('light_9')">Kosárba <i class="bi bi-cart"></i></a>
+                            <a href="#" class="btn btn-danger" style="width: 200px;">Kedvencek <i class="bi bi-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+
+        <!-- <div class="container-akcio">
+            <div class="row">
+                <div class="col"> <p>Az arra jogosultak számára kiküldtük már előzetesen a kuponkódokat email-ben. </p>
+                    <p>Kupokódodat itt tudod beváltani: </p>
+                    
+                    <div class="d-block d-md-flex">
+                        <input type="text" class="hero-input" style="margin-left: 500px;"/>
+                        <button class="btn btn-outline-dark mt-3 mt-md-0">Beváltom</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+
+       
+<footer>
+    <div class="container">
+        
+            <div class="row">
+                <div class="col">
+                    <p>A kuponkódokat már előzetesen kiküldtük email-ben.</p>
+                    <p>Itt tudod őket beváltani:</p>
+    
+                    <div class="d-block d-md-flex">
+                        <input type="text" class="hero-input" style="margin-left: 500px;"/>
+                        <button class="btn btn-outline-dark mt-3 mt-md-0">Beváltom</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center py1">
+                <p class="fs-6">Készítette: Behány Ágnes, Borók Maja, Vigh Gréta &copy; 2024</p>
+            </div>
+    </div>
+</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="./script/main.js"></script>
+</html>

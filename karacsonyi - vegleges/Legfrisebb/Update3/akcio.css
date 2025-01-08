@@ -1,0 +1,21 @@
+.container-akcio {
+    margin-top: 100px;
+    text-align: center;
+}
+
+hr {
+    margin-top: 50px;
+    /* margin-bottom: 200px; */
+}
+
+footer {
+
+    margin-top: 100px;
+    /* background-color: #4f709c; */
+    color: #213555;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 50px;
+}

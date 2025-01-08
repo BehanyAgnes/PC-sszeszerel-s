@@ -1,0 +1,47 @@
+body {
+    font-family: "poppins", sans-serif;
+    background-color: #f5efe7;
+    color: #213555;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.ckepek {
+    width: 500px;
+    height: 500px;
+}
+
+h1{
+    margin-top: 120px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.footer {
+    background-color: #4F709C;
+    color: black;
+}
+
+.text-center {
+    margin-top: 100px;
+}
+
+#cimek {
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+#szoveg {
+    text-align: center;
+}
+
+#szovegek {
+    text-align: center;
+}
+
+#cim {
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
