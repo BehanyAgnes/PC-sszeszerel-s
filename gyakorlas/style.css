@@ -1,0 +1,54 @@
+.img-fluid {
+    width: 100%;
+}
+
+.tortenet1{
+    width: 310px;
+    height: 400px;
+    margin: auto;
+    padding: auto;
+    display: block;
+}
+.tortenet2 {
+
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    padding: auto;
+    display: block;
+
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.wba {
+    width: 400px;
+}
+
+#gyoztes {
+    background-color: #FFFF99;
+    text-align: justify;
+}
+
+.merkozes {
+    width: 300px;
+}
+
+.hivatkozas {
+    text-decoration: none;
+    color: #6b4226;
+    font-weight: bold;
+   
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+caption {
+    text-align: center;
+}

@@ -1,0 +1,8 @@
+Cím;Ár;Eladott példányok;Megjelenés éve
+Harry Potter és a bölcsek köve;3500;1200;1997
+A hobbit;2500;900;1937
+Harry Potter és a titkok kamrája;3700;1100;1998
+Zavodnyik és a rozsdás rét;2000;850;1951
+Harry Potter és az azkábani fogoly;3800;1050;1999
+Csillagainkban a hiba;3000;2000;2012
+Trónok harca;4000;1500;1996
