@@ -1,0 +1,76 @@
+using NUnit.Framework;
+
+[TestFixture]
+public class MathHelperTests
+{
+    private Calculator _calculator;
+
+    // Ez a metódus minden teszt futtatása előtt lefut
+    [SetUp]
+    public void SetUp()
+    {
+        _calculator = new Calculator();
+    }
+
+    [Test]
+    public void Add_Numbers_ReturnsCorrectSum()
+    {
+        // Arrange: előkészítés
+        double a = 5;
+        double b = 3;
+
+        // Act: a tényleges metódus meghívása
+        double result = _calculator.Add(a, b);
+
+        // Assert: az eredmény ellenőrzése
+        Assert.AreEqual(8, result);
+    }
+
+    [Test]
+    public void Subtract_Numbers_ReturnsCorrectResult()
+    {
+        // Arrange
+        double a = 10;
+        double b = 4;
+
+        // Act
+        double result = _calculator.Subtract(a, b);
+
+        // Assert
+        Assert.AreEqual(6, result);
+    }
+
+    [Test]
+    public void Mul_Numbers_ReturnsCorrectResult()
+    {
+        // Arrange
+        double a = 5;
+        double b = 3;
+
+        // Act
+        double result = _calculator.Multiply(a, b);
+
+        // Assert
+        Assert.AreEqual(15, result);
+    }
+
+    [Test]
+    public void Div_Numbers_ReturnsCorrectResult()
+    {
+        // Arrange
+        double a = 10;
+        double b = 5;
+
+        // Act
+        double result = _calculator.Divide(a, b);
+
+        // Assert
+        Assert.AreEqual(2, result);
+    }
+
+    [Test]
+    public void Sqr_Numbers_ReturnsCorrectResult()
+    {
+
+    }
+}
