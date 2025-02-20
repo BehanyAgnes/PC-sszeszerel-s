@@ -36,7 +36,7 @@ namespace dolgozat
             List<int> szamok = new List<int>();
             while (true)
             {
-                Console.WriteLine("Adjon meg egy számot:");
+                Console.WriteLine("Adj meg egy számot:");
                 int szam = int.Parse(Console.ReadLine());
                 szamok.Add(szam);
                 if (szam == 0)
