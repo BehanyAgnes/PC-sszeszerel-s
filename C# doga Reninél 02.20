@@ -36,7 +36,7 @@ namespace dolgozat
             List<int> szamok = new List<int>();
             while (true)
             {
-                Console.WriteLine("Adjon meg egy számot: ");
+                Console.WriteLine("Adjon meg egy számot:");
                 int szam = int.Parse(Console.ReadLine());
                 szamok.Add(szam);
                 if (szam == 0)
@@ -48,11 +48,26 @@ namespace dolgozat
             szamok.Reverse();
             Console.WriteLine(string.Join(",",szamok));
             Console.WriteLine("A legnagyobb szám: {0}", szamok[0]);
-
-
-
-
-
+            
+            //4. feladat
+            Console.WriteLine("\n##############################################\n");
+            List<int> szamok2 = new List<int>();
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Adj meg egy számot:");
+                int szam2 = int.Parse(Console.ReadLine());
+                if (szam2 % 2 == 0)
+                {
+                    szamok2.Add(szam2);
+                    Console.WriteLine("A szám páros: {0}", szam2);
+                    Console.WriteLine("A listához adva: {0} lett.", szamok2.Count);
+                }
+                else
+                {
+                    Console.WriteLine("A szám páratlan: {0}.", szam2);
+                }
+            }
+            Console.WriteLine("A lista hossza: {0}", szamok2.Count);
 
 
 
