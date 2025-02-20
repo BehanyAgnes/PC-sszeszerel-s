@@ -71,6 +71,60 @@ public class MathHelperTests
     [Test]
     public void Sqr_Numbers_ReturnsCorrectResult()
     {
+        double a = 5;
+        double result = _calculator.Square(a);
 
+        Assert.AreEqual(25, result);
     }
+
+    [Test]
+    public void Sqrrt_Numbers_ReturnsCorrectResult()
+    {
+        double a = 36;
+        double result = _calculator.SquareRoot(a);
+        Assert.AreEqual(6, result);
+    }
+
+    [Test]
+    public void Avg_Numbers_ReturnsCorrectResult()
+    {
+        double[] a = { 10, 20, 30 };
+        double result = _calculator.Average(a);
+        Assert.AreEqual(20, result);
+    }
+
+    [Test]
+    public void GCD_Numbers_ReturnsCorrectResult()
+    {
+        int a = 10;
+        int b = 20;
+        int result = _calculator.GCD(a, b);
+        Assert.AreEqual(10, result);
+    }
+
+    [Test]
+    public void LCM_Numbers_ReturnsCorrectResult()
+    {
+        int a = 10;
+        int b = 20;
+        int result = _calculator.LCM(a, b);
+        Assert.AreEqual(20, result);
+    }
+
+    [Test]
+    public void Even_Numbers_ReturnsCorrectResult()
+    {
+        int a = 10;
+        bool result = _calculator.IsEven(a);
+        Assert.AreEqual(true, result);
+    }
+
+    [Test]
+    public void Prime_Numbers_ReturnsCorrectResult()
+    {
+        int a = 13;
+        bool result = _calculator.IsPrime(a);
+        Assert.AreEqual(true, result);
+    }
+
 }
