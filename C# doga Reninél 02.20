@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace dolgozat
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //1. feladat
+            string[] etelek = { "pizza", "lasagne", "palacsinta", "gyros", "paradicsomleves" };
+            if (etelek.Contains("pizza"))
+            {
+                Console.WriteLine("A tömbben van pizza.");
+            }
+            else
+            {
+                Console.WriteLine("A tömbben nincs pizza.");
+            }
+            Console.WriteLine(string.Join(",",etelek));
+
+            //2. feladat
+            Console.WriteLine("\n##############################################\n");
+            string[] nevek = { "The Witcher 3: Wild Hunt", "Minecraft", "Cyberpunk 2077", "Among Us", "The Elder Scrolls V: Skyrim", "Valorant" };
+            if (nevek.Contains("Valorant"))
+            {
+                nevek[Array.IndexOf(nevek, "Valorant")] = "Fortnite";
+            }
+            Console.WriteLine(string.Join(";",nevek));
+
+            //3. feladat
+            Console.WriteLine("\n##############################################\n");
+            List<int> szamok = new List<int>();
+            while (true)
+            {
+                Console.WriteLine("Adjon meg egy számot: ");
+                int szam = int.Parse(Console.ReadLine());
+                szamok.Add(szam);
+                if (szam == 0)
+                {
+                    break;
+                }
+            }
+            szamok.Sort();
+            szamok.Reverse();
+            Console.WriteLine(string.Join(",",szamok));
+            Console.WriteLine("A legnagyobb szám: {0}", szamok[0]);
+
+
+
+
+
+
+
+
+            Console.ReadKey();
+        }
+    }
+}
