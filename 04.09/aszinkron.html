@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aszinkron</title>
+</head>
+<body>
+    <script>
+        const masodik = () => {
+            setTimeout(() => {      //aszinkronosítjuk (asszem így mondta)
+                console.log("Aszinkron második");
+            }, 3000);
+        };
+        const elso = () => {
+            console.log("Első");
+            masodik();
+            console.log("Harmadik");
+        };
+        elso();
+
+    </script>
+</body>
+</html>
