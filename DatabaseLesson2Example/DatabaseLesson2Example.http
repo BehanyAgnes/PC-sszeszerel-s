@@ -1,0 +1,6 @@
+@DatabaseLesson2Example_HostAddress = http://localhost:5162
+
+GET {{DatabaseLesson2Example_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
